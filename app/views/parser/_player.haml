@@ -1,0 +1,8 @@
+!!!
+%html
+  %body
+    - @player.each_with_index do |x, y|
+      %tr
+        %td= x
+        %td= @caphit[y]
+        %td= @positionheading[y]
